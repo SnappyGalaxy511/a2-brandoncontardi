@@ -13,3 +13,6 @@ CSS layout uses **flexbox** (`main` lays the form and table panels side by side 
 Every car stored on the server has two fields computed from data already present on the row:
 - `efficiency` — "Excellent" / "Good" / "Poor", derived from `mpg`
 - `ageCategory` — "Classic" / "Modern", derived from `year`
+
+## AI Usage
+AI was used to create this readme based off of the code. I checked to make sure the created readme was accurate to the code before submission.
