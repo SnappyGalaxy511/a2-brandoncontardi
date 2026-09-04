@@ -1,8 +1,8 @@
 {
-  "name": "",
-  "version": "",
-  "description": "",
-  "author": "",
+  "name": "a2-brandoncontardi",
+  "version": "1.0.0",
+  "description": "Car Fleet Tracker - a two-tier web app for managing a car fleet dataset with server-derived fields",
+  "author": "Brandon Contardi",
   "scripts": {
     "start": "node server.js"
   },

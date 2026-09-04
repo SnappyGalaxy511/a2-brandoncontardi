@@ -1,4 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background:black;
-  color:white;
+  background: #111417;
+  color: #eee;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  margin-bottom: 0.25rem;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#form-section,
+#results-section {
+  background: #1c2024;
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+  flex: 1;
+  min-width: 320px;
+}
+
+#results-section {
+  flex: 2;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 0.85rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+input[type='text'],
+input[type='number'] {
+  margin-top: 0.35rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 6px;
+  border: 1px solid #3a3f45;
+  background: #24282d;
+  color: #eee;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: 2px solid #4caf50;
+}
+
+.button-row {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+button {
+  padding: 0.55rem 1.1rem;
+  border: none;
+  border-radius: 6px;
+  background: #4caf50;
+  color: white;
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(1.1);
+}
+
+#cancel-btn {
+  background: #555b62;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.6rem 0.5rem;
+  border-bottom: 1px solid #2e3237;
+}
+
+th {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #9aa1a8;
+}
+
+.edit-btn {
+  background: #2196f3;
+  margin-right: 0.4rem;
+  padding: 0.35rem 0.7rem;
+  font-size: 0.85rem;
+}
+
+.delete-btn {
+  background: #f44336;
+  padding: 0.35rem 0.7rem;
+  font-size: 0.85rem;
+}
+
+.efficiency-excellent {
+  color: #4caf50;
+  font-weight: 600;
+}
+
+.efficiency-good {
+  color: #ffc107;
+  font-weight: 600;
+}
+
+.efficiency-poor {
+  color: #f44336;
+  font-weight: 600;
+}
+
+#car-table-body tr:hover {
+  background: #22262b;
 }

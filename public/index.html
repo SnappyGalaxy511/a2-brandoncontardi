@@ -1,18 +1,59 @@
 <!doctype html>
 <html lang='en'>
   <head>
-    <title>CS4241 Assignment 2</title>
+    <title>Car Fleet Tracker</title>
     <meta charset='utf-8' />
-    <script src='js/main.js'></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap' />
     <link rel='stylesheet' href='css/main.css' />
-    
+    <script src='js/main.js' defer></script>
+
     <!-- get rid of favicon error -->
     <link rel='icon' href='data:;base64,iVBORw0KGgo=' />
   </head>
   <body>
-    <form>
-      <input type='text' id='yourname' value='your name here'>
-      <button>submit</button>
-    </form>
+    <header>
+      <h1>Car Fleet Tracker</h1>
+      <p>Add, edit, and remove cars from the fleet. Efficiency and age category are calculated automatically by the server.</p>
+    </header>
+
+    <main>
+      <section id='form-section'>
+        <h2>Add / Edit Car</h2>
+        <form id='car-form'>
+          <label for='model'>Model</label>
+          <input type='text' id='model' name='model' required />
+
+          <label for='year'>Year</label>
+          <input type='number' id='year' name='year' min='1900' max='2100' required />
+
+          <label for='mpg'>MPG</label>
+          <input type='number' id='mpg' name='mpg' min='0' step='0.1' required />
+
+          <div class='button-row'>
+            <button type='submit' id='submit-btn'>Add Car</button>
+            <button type='button' id='cancel-btn' hidden>Cancel</button>
+          </div>
+        </form>
+      </section>
+
+      <section id='results-section'>
+        <h2>Fleet Data</h2>
+        <table id='car-table'>
+          <thead>
+            <tr>
+              <th>Model</th>
+              <th>Year</th>
+              <th>MPG</th>
+              <th>Efficiency</th>
+              <th>Age Category</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id='car-table-body'></tbody>
+        </table>
+      </section>
+    </main>
   </body>
 </html>
